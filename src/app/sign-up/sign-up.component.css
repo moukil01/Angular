@@ -1,0 +1,11 @@
+img{
+    margin-top: 1em;
+    margin-right: 10em;
+    width: 50em;
+}
+input{
+    position: absolute;
+    position: center;
+    border: solid red 3px;
+    width: 50em;
+}
