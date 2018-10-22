@@ -1,0 +1,26 @@
+<h1>Hello</h1><br />
+
+<div class="card" style="width: 18rem">
+
+    <img class="card-img-top" src="{{User.photo}}" alt="Card image cap">
+      <div class="card-body">
+
+        <h3 class="card-title"> Nom: {{User.name}}</h3>
+
+        <h3 class="card-title"> Prenom: {{User.firstName}}</h3>
+
+    </div>
+</div>
+
+
+<h3 class={{classHidden}}> Age : {{User.age}}</h3>
+
+<button (click)="isHidden()" class="btn btn-success"> Masquer :Age </button>
+
+<h3>{{User.quote}}</h3>
+<div>
+    <label>Quote :
+        <input [(ngModel)] = "User.quote" />
+    </label>
+</div>
+
