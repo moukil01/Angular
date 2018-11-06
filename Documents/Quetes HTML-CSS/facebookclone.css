@@ -1,0 +1,143 @@
+/* ------------ TOPBAR  ------------ */
+
+* {
+    margin: 0;
+} /* remet à zéro les marges de tous les éléments du HTML */
+
+html, body {
+    height: 100%; /* Indique que la page occupera toute la hauteur de la fenêtre du navigateur. Indispensable si vous attribuez des propriétés height en % à d'autres éléments de la page (comme on le fait pour #topbar-container dans la partie Media Queries plus bas) ! */
+}
+
+body {
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+}
+
+#topbar-container {
+    background-color: #3b5998;
+    color: #fff;
+    height: 5.2em; /* ne pas utiliser de px, car on veut être responsive */
+    transition: height 0.5s;
+}
+
+#topbar {
+    margin: 0 auto; /* permet de centrer la div par rappor à la div dans laquelle est est contenue */
+    width: 90%; /* pour que l'astuce de "margin : 0 auto" fonctionne, il faut lui attribuer une width  */
+}
+
+#logo {
+    display: inline-block; /* aligne les blocks */
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding-top: 2%; 
+}
+
+#inputs-container {
+    display: inline-block;
+    float: right; /* place l'élément sur la droite de la page */
+    margin-top: 1%;
+}
+
+.topbar-input-container {
+    display: inline-block;
+}
+
+.topbar-input-label {
+    display: block;
+}
+
+#log-in-button {
+    /* Pas fait en live coding, voici les propriétés pour que le css soit plus proche de l'original :) */
+    width: 4em;
+    padding: 5px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #4267b2;
+    border: 1px solid #29487d;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#forgot-account-container {
+    width: 72%;
+    margin-top: 1%;
+}
+
+#forgot-account-container>a { /* "#forgot-account-container a" marche aussi */
+    text-decoration: none;
+    color: #9cb4d8;
+    float: right;
+}
+
+/* ------------ MAIN  ------------ */
+
+#main {
+    background-color: #edf0f5;
+}
+
+
+/* ------------ MEDIA QUERIES ------------ */
+
+@media only screen and (max-width: 720px) {
+    
+    #topbar-container {
+        height: 100%;
+    }
+
+    #topbar {
+        text-align: center;
+    }
+    
+    #logo {
+        display: block;
+        font-size: 3.3em;
+        padding-top: 1em;
+    }
+    
+    .topbar-input-container {
+        display: block;
+        margin-top: 1em;
+        margin: 0 auto;
+        width: 90%;
+    }
+    
+    #logo {
+        display: block;
+        text-align:center;
+        font-size: 3.3em;
+        padding-top: 1em;
+    }
+
+    #inputs-container {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+    
+    .topbar-input-container {
+        display: block;
+        margin-top: 1em;
+    }
+    
+    .topbar-input-label {
+        display: block;
+        text-align: center;
+    }
+    
+    #log-in-button {
+        width: 13em;
+    }
+    
+    #forgot-account-container {
+        width: 13em;
+        margin: 2em auto;
+    }
+
+    #forgot-account-container>a {
+        float: none;
+        display: inline-block;
+    }
+    
+}

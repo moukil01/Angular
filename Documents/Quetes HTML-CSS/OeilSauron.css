@@ -1,0 +1,30 @@
+.black{
+    background-color: black;
+
+    border: solid 1px white;
+}
+.orange{
+    background: orange;
+
+    border: solid 1px white; 
+}
+.jaune{
+  background: yellow;
+
+    border: solid 1px white; 
+}
+
+.row{
+height: 60px; 
+width: 100%;
+ 
+} 
+
+/* Corp de page */
+.container {
+    height: :350px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}

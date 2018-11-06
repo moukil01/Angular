@@ -1,0 +1,7 @@
+//1) Ecrire une fonction qui compte le nombre de personnes mineures dans un tableau d’entiers. Le tableau contient les âges des personnes.
+//2) Ecrire une function qui teste la fonction précédente
+
+
+console.log("Hello World!!");
+
+

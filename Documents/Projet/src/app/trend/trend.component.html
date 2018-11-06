@@ -1,0 +1,51 @@
+<div class="container-fluid" class="container1">
+
+    <div class="row">
+
+            <div class="container" class="col-sm-12 col-md-12 col-lg-4">
+
+
+                    <div class="img1">
+    
+                        <img src="src/assets/fantasy-2368432_1920.jpg" (click)="viewInfoImage1()" class="image" />
+                    </div>
+    
+                    <div *ngIf="viewImage1">
+                        <app-tend-planet></app-tend-planet>
+                    </div>
+                    
+            </div>
+
+       
+
+            <div class="container" class="col-sm-12 col-md-12 col-lg-4">
+
+                <div class="img2">
+
+                    <img src="src/assets/fantasy-2368432_1920.jpg" (click)="viewInfoImage2()" class="image" />
+
+                </div>
+
+                <div *ngIf="viewImage2">
+                    <app-tend-planet></app-tend-planet>
+                </div>
+
+            </div>
+
+            <div class="container" class="col-sm-12 col-md-12 col-lg-4">
+
+
+                <div class="img3">
+
+                    <img src="src/assets/fantasy-2368432_1920.jpg" (click)="viewInfoImage3()" class="image" />
+                </div>
+
+                <div *ngIf="viewImage3">
+                    <app-tend-planet></app-tend-planet>
+                </div>
+
+            </div>
+
+        </div>
+
+</div>
